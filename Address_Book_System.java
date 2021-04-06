@@ -124,12 +124,28 @@ public class Address_Book_System {
                         i.email = editEmail;
                     }
                 System.out.println(persons);
-            
-            }
+		}
+	}
+
+                System.out.println("Deleting a contact");
+
+                System.out.println(persons);
+                System.out.println("Which contact you want to delete from address book: ");
+                Scanner input = new Scanner(System.in);
+                String deleteContact = input.next();
+
+                for( Address_Book_System i : persons) {
+
+                        if(i.getFirstName().equals(deleteContact)){
+                            persons.remove(i);
+                        }
+                }
+                System.out.println(persons);
+
             }else{
                 System.out.println("Invalid Option");
             }
         }
     }
 
-}
+
