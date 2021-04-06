@@ -49,11 +49,11 @@ public class Address_Book_System {
    public static void main(String[] args) {
         
         System.out.println("Welcome to Address Book");
-
+	System.out.println("Add multiple persons");
         List<Address_Book_System> persons = new ArrayList<>();
 
         Scanner uc = new Scanner(System.in);
-        System.out.println("If you want to add address enter '0' ");
+        System.out.println("If you want to add address enter '0' or \nfor editing existing address enter '1' and \nfor deleting enter '2': ");
         int userChoice = uc.nextInt();
 
         if(userChoice == 0 ){
